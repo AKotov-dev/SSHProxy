@@ -7,4 +7,5 @@ If the connection is established, `127.0.0.1:8080` will be listened to. Set this
   
 ![](https://github.com/AKotov-dev/SSHProxy/blob/main/ScreenShots/ScreenShot1.png)  
 ![](https://github.com/AKotov-dev/SSHProxy/blob/main/ScreenShots/ScreenShot2.png)  
-
+  
+**Similar programs:** [DNSCrypt-GUI](https://github.com/AKotov-dev/dnscrypt-gui), [XRayGUI](https://github.com/AKotov-dev/XRayGUI), [SS-Obfuscator](https://github.com/AKotov-dev/SS-Obfuscator), [vmess-ws](https://github.com/AKotov-dev/vmess-ws).
