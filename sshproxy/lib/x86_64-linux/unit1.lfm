@@ -1,12 +1,12 @@
 object MainForm: TMainForm
   Left = 285
-  Height = 192
+  Height = 190
   Top = 124
-  Width = 476
+  Width = 510
   Anchors = [akTop]
   Caption = 'SSHProxy'
-  ClientHeight = 192
-  ClientWidth = 476
+  ClientHeight = 190
+  ClientWidth = 510
   OnCreate = FormCreate
   OnResize = FormResize
   OnShow = FormShow
@@ -17,7 +17,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 37
     Top = 27
-    Width = 225
+    Width = 259
     Anchors = [akTop, akLeft, akRight]
     TabOrder = 0
   end
@@ -37,7 +37,7 @@ object MainForm: TMainForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 272
+    Left = 306
     Height = 37
     Top = 27
     Width = 199
@@ -52,7 +52,7 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = Edit2
     AnchorSideTop.Control = Edit2
     AnchorSideBottom.Control = Edit2
-    Left = 272
+    Left = 306
     Height = 17
     Top = 8
     Width = 61
@@ -65,18 +65,19 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 37
-    Top = 94
-    Width = 225
+    Top = 93
+    Width = 259
     Anchors = [akLeft, akRight]
     TabOrder = 2
   end
   object Label3: TLabel
     AnchorSideLeft.Control = Edit3
-    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Control = Edit1
+    AnchorSideTop.Side = asrBottom
     AnchorSideBottom.Control = Edit3
     Left = 8
     Height = 17
-    Top = 75
+    Top = 74
     Width = 40
     Anchors = [akLeft, akBottom]
     BorderSpacing.Bottom = 2
@@ -86,9 +87,9 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = Edit2
     AnchorSideRight.Control = Edit2
     AnchorSideRight.Side = asrBottom
-    Left = 272
+    Left = 306
     Height = 37
-    Top = 94
+    Top = 93
     Width = 199
     Anchors = [akLeft, akRight]
     TabOrder = 3
@@ -97,15 +98,17 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = Edit4
     AnchorSideTop.Control = Edit4
     AnchorSideBottom.Control = Edit4
-    Left = 272
+    Left = 306
     Height = 17
-    Top = 75
+    Top = 74
     Width = 118
     Anchors = [akLeft, akBottom]
     BorderSpacing.Bottom = 2
     Caption = 'Port (3128, 8080, ?):'
   end
   object AutostartBox: TCheckBox
+    AnchorSideBottom.Control = ClearBox
+    AnchorSideBottom.Side = asrCenter
     Left = 8
     Height = 32
     Top = 148
@@ -119,27 +122,31 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = AutostartBox
     AnchorSideLeft.Side = asrBottom
     AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = AutostartBox
-    AnchorSideBottom.Side = asrBottom
-    Left = 103
+    AnchorSideBottom.Control = StartBtn
+    AnchorSideBottom.Side = asrCenter
+    Left = 108
     Height = 32
     Top = 148
     Width = 190
     Anchors = [akLeft, akBottom]
-    BorderSpacing.Left = 5
+    BorderSpacing.Left = 10
     BorderSpacing.Right = 5
     Caption = 'Clear cookies on start GUI'
     OnChange = ClearBoxChange
     TabOrder = 5
   end
   object StartBtn: TSpeedButton
-    AnchorSideBottom.Control = ClearBox
-    AnchorSideBottom.Side = asrCenter
-    Left = 368
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 402
     Height = 36
     Top = 146
     Width = 103
     Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 8
     Caption = '---'
     OnClick = StartBtnClick
   end
@@ -147,7 +154,7 @@ object MainForm: TMainForm
     AnchorSideTop.Control = StartBtn
     AnchorSideTop.Side = asrCenter
     AnchorSideRight.Control = StartBtn
-    Left = 354
+    Left = 388
     Height = 12
     Top = 158
     Width = 12
