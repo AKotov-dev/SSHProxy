@@ -1,2 +1,2 @@
 # SSHProxy
-Connecting to an external proxy via SSH tunnel
+GUI for connecting to an external proxy through an SSH tunnel (port forwarding, encryption).
