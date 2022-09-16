@@ -31,7 +31,7 @@ urlcopy=https://github.com/AKotov-dev/SSHProxy
 license=GPLv3+
 
 [DEPS]
-deps=openssh-clients systemd
+deps=openssh-clients sshpass systemd gtk2
 
 [META]
 meta=0
@@ -55,17 +55,13 @@ deb=0
 
 [AFTERINSTALL]
 0=#!/bin/bash
-1=#ldconfig
-2=#update-desktop-database -q /usr/share/applications
-3=#update-mime-database /usr/share/mime
-4=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+1=
+2=systemctl daemon-reload
 
 [AFTERREMOVE]
 0=#!/bin/bash
-1=#ldconfig
-2=#update-desktop-database -q /usr/share/applications
-3=#update-mime-database /usr/share/mime
-4=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+1=
+2=systemctl daemon-reload
 
 [URL32]
 url32=https://github.com/AKotov-dev/SSHProxy

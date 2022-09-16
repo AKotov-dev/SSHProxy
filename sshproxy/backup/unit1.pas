@@ -40,6 +40,7 @@ type
   end;
 
 resourcestring
+  SAppRunning = 'The program is already running!';
   SStart = 'Start';
   SStop = 'Stop';
 

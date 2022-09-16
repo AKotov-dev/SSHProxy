@@ -108,7 +108,7 @@ object MainForm: TMainForm
   object AutostartBox: TCheckBox
     Left = 8
     Height = 32
-    Top = 150
+    Top = 148
     Width = 90
     Anchors = [akLeft, akBottom]
     Caption = 'Autostart'
@@ -123,7 +123,7 @@ object MainForm: TMainForm
     AnchorSideBottom.Side = asrBottom
     Left = 103
     Height = 32
-    Top = 150
+    Top = 148
     Width = 190
     Anchors = [akLeft, akBottom]
     BorderSpacing.Left = 5
@@ -137,7 +137,7 @@ object MainForm: TMainForm
     AnchorSideBottom.Side = asrCenter
     Left = 356
     Height = 36
-    Top = 148
+    Top = 146
     Width = 103
     Anchors = [akRight, akBottom]
     Caption = '---'
@@ -149,7 +149,7 @@ object MainForm: TMainForm
     AnchorSideRight.Control = StartBtn
     Left = 342
     Height = 12
-    Top = 160
+    Top = 158
     Width = 12
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 2
