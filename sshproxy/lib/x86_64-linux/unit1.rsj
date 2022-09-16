@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":7788545,"name":"unit1.sapprunning","sourcebytes":[84,104,101,32,112,114,111,103,114,97,109,32,105,115,32,97,108,114,101,97,100,121,32,114,117,110,110,105,110,103,33],"value":"The program is already running!"},
+{"hash":5941396,"name":"unit1.sstart","sourcebytes":[83,116,97,114,116],"value":"Start"},
+{"hash":371552,"name":"unit1.sstop","sourcebytes":[83,116,111,112],"value":"Stop"}
+]}

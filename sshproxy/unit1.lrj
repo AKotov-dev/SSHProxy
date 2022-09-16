@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":131568505,"name":"tmainform.caption","sourcebytes":[83,83,72,80,114,111,120,121],"value":"SSHProxy"},
+{"hash":87416858,"name":"tmainform.label1.caption","sourcebytes":[76,111,103,105,110,58],"value":"Login:"},
+{"hash":179191546,"name":"tmainform.label2.caption","sourcebytes":[80,97,115,115,119,111,114,100,58],"value":"Password:"},
+{"hash":164219914,"name":"tmainform.label3.caption","sourcebytes":[83,101,114,118,101,114,58],"value":"Server:"},
+{"hash":132316122,"name":"tmainform.label4.caption","sourcebytes":[80,111,114,116,32,40,51,49,50,56,44,32,56,48,56,48,44,32,63,41,58],"value":"Port (3128, 8080, ?):"},
+{"hash":191553620,"name":"tmainform.autostartbox.caption","sourcebytes":[65,117,116,111,115,116,97,114,116],"value":"Autostart"},
+{"hash":120555561,"name":"tmainform.clearbox.caption","sourcebytes":[67,108,101,97,114,32,99,111,111,107,105,101,115,32,111,110,32,115,116,97,114,116,32,71,85,73],"value":"Clear cookies on start GUI"},
+{"hash":12285,"name":"tmainform.startbtn.caption","sourcebytes":[45,45,45],"value":"---"}
+]}

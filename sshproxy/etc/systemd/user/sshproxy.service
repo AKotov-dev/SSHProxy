@@ -1,0 +1,12 @@
+[Unit]
+Description=SSHProxy Service
+After=network.target nss-lookup.target
+
+[Service]
+ExecStart=bash -c '~/.config/sshproxy/start-tunnel'
+#ExecStop=killall ssh
+#Restart=on-failure
+#RestartPreventExitStatus=23
+
+[Install]
+WantedBy=default.target

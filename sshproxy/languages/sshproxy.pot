@@ -1,0 +1,53 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.autostartbox.caption
+msgctxt "tmainform.autostartbox.caption"
+msgid "Autostart"
+msgstr ""
+
+#: tmainform.caption
+msgid "SSHProxy"
+msgstr ""
+
+#: tmainform.clearbox.caption
+msgctxt "tmainform.clearbox.caption"
+msgid "Clear cookies on start GUI"
+msgstr ""
+
+#: tmainform.label1.caption
+msgid "Login:"
+msgstr ""
+
+#: tmainform.label2.caption
+msgctxt "tmainform.label2.caption"
+msgid "Password:"
+msgstr ""
+
+#: tmainform.label3.caption
+msgctxt "tmainform.label3.caption"
+msgid "Server:"
+msgstr ""
+
+#: tmainform.label4.caption
+msgid "Port (3128, 8080, ?):"
+msgstr ""
+
+#: tmainform.startbtn.caption
+msgctxt "tmainform.startbtn.caption"
+msgid "---"
+msgstr ""
+
+#: unit1.sapprunning
+msgid "The program is already running!"
+msgstr ""
+
+#: unit1.sstart
+msgctxt "unit1.sstart"
+msgid "Start"
+msgstr ""
+
+#: unit1.sstop
+msgid "Stop"
+msgstr ""
+

@@ -1,0 +1,165 @@
+object MainForm: TMainForm
+  Left = 285
+  Height = 192
+  Top = 124
+  Width = 464
+  Anchors = [akTop]
+  Caption = 'SSHProxy'
+  ClientHeight = 192
+  ClientWidth = 464
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  SessionProperties = 'Edit1.Text;Edit2.Text;Edit3.Text;Edit4.Text;Left;Top;Width;Height'
+  LCLVersion = '2.2.0.4'
+  object Edit1: TEdit
+    AnchorSideRight.Side = asrCenter
+    Left = 8
+    Height = 37
+    Top = 27
+    Width = 213
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Edit1
+    AnchorSideTop.Control = Edit1
+    AnchorSideBottom.Control = Edit1
+    Left = 8
+    Height = 17
+    Top = 8
+    Width = 37
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 2
+    Caption = 'Login:'
+  end
+  object Edit2: TEdit
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 260
+    Height = 37
+    Top = 27
+    Width = 199
+    Anchors = [akTop, akRight]
+    BorderSpacing.Left = 5
+    BorderSpacing.Right = 5
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Edit2
+    AnchorSideTop.Control = Edit2
+    AnchorSideBottom.Control = Edit2
+    Left = 260
+    Height = 17
+    Top = 8
+    Width = 61
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 2
+    Caption = 'Password:'
+  end
+  object Edit3: TEdit
+    AnchorSideRight.Control = Edit1
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 37
+    Top = 94
+    Width = 213
+    Anchors = [akLeft, akRight]
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Edit3
+    AnchorSideTop.Control = Edit3
+    AnchorSideBottom.Control = Edit3
+    Left = 8
+    Height = 17
+    Top = 75
+    Width = 40
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 2
+    Caption = 'Server:'
+  end
+  object Edit4: TEdit
+    AnchorSideLeft.Control = Edit2
+    AnchorSideRight.Control = Edit2
+    AnchorSideRight.Side = asrBottom
+    Left = 260
+    Height = 37
+    Top = 94
+    Width = 199
+    Anchors = [akLeft, akRight]
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = Edit4
+    AnchorSideTop.Control = Edit4
+    AnchorSideBottom.Control = Edit4
+    Left = 260
+    Height = 17
+    Top = 75
+    Width = 118
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 2
+    Caption = 'Port (3128, 8080, ?):'
+  end
+  object AutostartBox: TCheckBox
+    Left = 8
+    Height = 32
+    Top = 150
+    Width = 90
+    Anchors = [akLeft, akBottom]
+    Caption = 'Autostart'
+    OnChange = AutostartBoxChange
+    TabOrder = 4
+  end
+  object ClearBox: TCheckBox
+    AnchorSideLeft.Control = AutostartBox
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = AutostartBox
+    AnchorSideBottom.Side = asrBottom
+    Left = 103
+    Height = 32
+    Top = 150
+    Width = 190
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 5
+    BorderSpacing.Right = 5
+    Caption = 'Clear cookies on start GUI'
+    OnChange = ClearBoxChange
+    TabOrder = 5
+  end
+  object StartBtn: TSpeedButton
+    AnchorSideBottom.Control = ClearBox
+    AnchorSideBottom.Side = asrCenter
+    Left = 356
+    Height = 36
+    Top = 148
+    Width = 103
+    Anchors = [akRight, akBottom]
+    Caption = '---'
+    OnClick = StartBtnClick
+  end
+  object Shape1: TShape
+    AnchorSideTop.Control = StartBtn
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = StartBtn
+    Left = 342
+    Height = 12
+    Top = 160
+    Width = 12
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 2
+    Brush.Color = clYellow
+    Pen.Color = clGray
+    Shape = stCircle
+  end
+  object IniPropStorage1: TIniPropStorage
+    StoredValues = <>
+    Left = 176
+    Top = 8
+  end
+end
