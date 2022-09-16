@@ -2,11 +2,11 @@ object MainForm: TMainForm
   Left = 285
   Height = 192
   Top = 124
-  Width = 464
+  Width = 476
   Anchors = [akTop]
   Caption = 'SSHProxy'
   ClientHeight = 192
-  ClientWidth = 464
+  ClientWidth = 476
   OnCreate = FormCreate
   OnResize = FormResize
   OnShow = FormShow
@@ -17,7 +17,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 37
     Top = 27
-    Width = 213
+    Width = 225
     Anchors = [akTop, akLeft, akRight]
     TabOrder = 0
   end
@@ -37,7 +37,7 @@ object MainForm: TMainForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 260
+    Left = 272
     Height = 37
     Top = 27
     Width = 199
@@ -52,7 +52,7 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = Edit2
     AnchorSideTop.Control = Edit2
     AnchorSideBottom.Control = Edit2
-    Left = 260
+    Left = 272
     Height = 17
     Top = 8
     Width = 61
@@ -66,7 +66,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 37
     Top = 94
-    Width = 213
+    Width = 225
     Anchors = [akLeft, akRight]
     TabOrder = 2
   end
@@ -86,7 +86,7 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = Edit2
     AnchorSideRight.Control = Edit2
     AnchorSideRight.Side = asrBottom
-    Left = 260
+    Left = 272
     Height = 37
     Top = 94
     Width = 199
@@ -97,7 +97,7 @@ object MainForm: TMainForm
     AnchorSideLeft.Control = Edit4
     AnchorSideTop.Control = Edit4
     AnchorSideBottom.Control = Edit4
-    Left = 260
+    Left = 272
     Height = 17
     Top = 75
     Width = 118
@@ -135,7 +135,7 @@ object MainForm: TMainForm
   object StartBtn: TSpeedButton
     AnchorSideBottom.Control = ClearBox
     AnchorSideBottom.Side = asrCenter
-    Left = 356
+    Left = 368
     Height = 36
     Top = 146
     Width = 103
@@ -147,7 +147,7 @@ object MainForm: TMainForm
     AnchorSideTop.Control = StartBtn
     AnchorSideTop.Side = asrCenter
     AnchorSideRight.Control = StartBtn
-    Left = 342
+    Left = 354
     Height = 12
     Top = 158
     Width = 12
