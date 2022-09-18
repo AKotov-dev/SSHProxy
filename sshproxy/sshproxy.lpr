@@ -52,8 +52,8 @@ begin
   //---
 
   RequireDerivedFormResource := True;
-  Application.Title := 'SSHProxy-v0.1 (localhost:8080)';
-  Application.Scaled := True;
+  Application.Title:='SSHProxy-v0.2 (localhost:8080)';
+  Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);
   Application.Run;

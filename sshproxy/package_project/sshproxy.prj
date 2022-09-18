@@ -2,7 +2,7 @@
 name=sshproxy
 
 [VERSION]
-version=0.1
+version=0.2
 
 [RELEASE]
 release=0.mrx9
@@ -79,5 +79,10 @@ devtool=Lazarus
 toolversion=2.2.0
 
 [INFO]
-0=v0.1
-1=+ Release for Mageia-9 and higher
+0=v0.2
+1=+ Improved SSH tunnel startup script (ServerAliveInterval=10)
+2=+ Improved /etc/systemd/user/sshproxy.service (RestartSec=20)
+3=+ Cosmetic code edits, changing the app icon
+4=
+5=v0.1
+6=+ Release for Mageia-9 and higher

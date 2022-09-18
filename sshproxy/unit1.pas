@@ -123,19 +123,12 @@ begin
     StartProcess('systemctl --user stop sshproxy.service')
   else
   begin
-    if Trim(Edit2.Text) <> '' then
-      //С паролем
-      StartProcess('echo -e "#!/bin/bash\n\nkillall ssh; sshpass -p "' +
-        Trim(Edit2.Text) + '" ssh -o \"StrictHostKeyChecking no\" ' +
-        Trim(Edit1.Text) + '@' + Trim(Edit3.Text) + ' -L 8080:localhost:' +
-        Trim(Edit4.Text) +
-        ' -N" > ~/.config/sshproxy/start-tunnel; chmod +x ~/.config/sshproxy/start-tunnel')
-    else
-      //Без пароля
-      StartProcess('echo -e "#!/bin/bash\n\nkillall ssh; ssh -o "StrictHostKeyChecking no" '
-        + Trim(Edit1.Text) + '@' + Trim(Edit3.Text) + ' -L 8080:localhost:' +
-        Trim(Edit4.Text) +
-        ' -N" > ~/.config/sshproxy/start-tunnel; chmod +x ~/.config/sshproxy/start-tunnel');
+    //С паролем
+    StartProcess('echo -e "#!/bin/bash\n\nsshpass -p \"' + Trim(Edit2.Text) +
+      '\" ssh -o \"StrictHostKeyChecking no\" -o \"ServerAliveInterval=10\" ' +
+      Trim(Edit1.Text) + '@' + Trim(Edit3.Text) + ' -L 8080:localhost:' +
+      Trim(Edit4.Text) +
+      ' -N\n\nexit 0;" > ~/.config/sshproxy/start-tunnel; chmod +x ~/.config/sshproxy/start-tunnel');
 
     //Перезапускаем тоннель
     StartProcess('systemctl --user restart sshproxy.service');
